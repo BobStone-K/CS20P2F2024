@@ -8,9 +8,9 @@ public class RectanglePerimeter {
 	{	
 		Scanner UserInput = new Scanner(System.in);
 		//Declaration and Initialization
-		System.out.print("Please enter a length vaule: ");
+		System.out.print("Please enter a length value: ");
 		int length = UserInput.nextInt();
-		System.out.print("Please enter a width vaule: ");
+		System.out.print("Please enter a width value: ");
 		int width = UserInput.nextInt();
 		int perimeter = 2*(length + width);
 		
