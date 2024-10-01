@@ -4,7 +4,12 @@ public class tester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print((7 >= 7) && (true || 99 < 1) || ! (3 > 5 && 7 < 10) && 2 != 4);
+		int n = 6;
+		switch(n %= 2) {
+		case 1: System.out.println("odd number"); break;
+		
+		default :  System.out.println("even number"); break;
+		}
 	}
 
 }
