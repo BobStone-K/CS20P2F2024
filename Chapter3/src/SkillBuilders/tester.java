@@ -4,12 +4,12 @@ public class tester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 6;
-		switch(n %= 2) {
-		case 1: System.out.println("odd number"); break;
-		
-		default :  System.out.println("even number"); break;
+		int sum = 0;
+		for (int i = 1; i <= 100; i++) {
+		  sum += i;
+		  System.out.println(i);
 		}
+		System.out.println(sum);
 	}
 
 }
