@@ -31,7 +31,7 @@ public class PrimeNumber {
 		// if prime is true then number was a prime number and will output that to user
 		System.out.print(userNum + " is a prime number");}
 		// if prime is false then number was not a prime number and will output that to user
-		else {System.out.print(userNum + " is a prime number");}
+		else {System.out.print(userNum + " is not a prime number");}
 			
 }
 }
