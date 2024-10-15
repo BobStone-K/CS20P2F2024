@@ -1,8 +1,22 @@
+/*
+
+Program: GuessingGame.java          Last Date of this Revision: October 8, 2024
+
+Purpose: The GuessingGame application created in Chapter 5 Exercise 8 would be more fun if users could make
+as many guesses as necessary to guess the secret number.
+
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20 
+ 
+
+*/
+
 package Mastery;
 
 import java.util.Scanner;
 
-public class GuessingGame2 {
+public class GuessingGame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -35,3 +49,16 @@ public class GuessingGame2 {
 	}
 
 }
+
+/* Screen Dump
+ 
+Paste the output of your code here:
+
+ Please enter a number between 1 and 20: 1
+Try again
+Please enter a number between 1 and 20: 2
+Try again
+Please enter a number between 1 and 20: 3
+You won!
+
+ */

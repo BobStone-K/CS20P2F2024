@@ -2,7 +2,8 @@
 
 Program: GroupAssignment.java          Last Date of this Revision: October 8, 2024
 
-Purpose: Create a GroupAssignment application that prompts the user
+Purpose: Create a GroupAssignment application that prompts the user for his or her name and then displays
+a group assignment.
 Author: Youdis Acharya, 
 School: CHHS
 Course: Computer Science 20 

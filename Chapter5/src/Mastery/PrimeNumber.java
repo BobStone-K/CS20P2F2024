@@ -2,8 +2,8 @@
 
 Program: PrimeNumberPartA.java          Last Date of this Revision: October 8, 2024
 
-Purpose: To figure out if a number is prime or not
-
+Purpose: Create a PrimeNumber application that prompts the user for a number and then displays a
+message indicating whether the number is prime or not.
 Author: Youdis Acharya, 
 School: CHHS
 Course: Computer Science 20 ??
