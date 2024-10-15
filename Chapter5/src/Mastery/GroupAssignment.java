@@ -1,3 +1,15 @@
+/*
+
+Program: GroupAssignment.java          Last Date of this Revision: October 8, 2024
+
+Purpose: Create a GroupAssignment application that prompts the user
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20 
+ 
+
+*/
+
 package Mastery;
 
 import java.util.Scanner;
@@ -34,3 +46,23 @@ public class GroupAssignment {
 	}
 
 }
+
+
+/* Screen Dump
+ 
+Paste the output of your code here
+Test Case 1:
+ Enter your first name: Youdis
+Enter your last name: Acharya
+Youdis Acharya is assigned to group 1
+
+Test Case 2: 
+Enter your first name: Bob
+Enter your last name: Money
+Bob Money is assigned to group 2
+
+Test Case 3: 
+Enter your first name: Teddy
+Enter your last name: Zygarde
+Teddy Zygarde is assigned to group 3
+ */

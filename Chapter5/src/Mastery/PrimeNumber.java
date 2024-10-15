@@ -1,3 +1,16 @@
+           /*
+
+Program: PrimeNumberPartA.java          Last Date of this Revision: October 8, 2024
+
+Purpose: To figure out if a number is prime or not
+
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20 ??
+ 
+
+*/
+
 package Mastery;
 
 import java.util.Scanner;
@@ -35,3 +48,14 @@ public class PrimeNumber {
 			
 }
 }
+
+
+/* Screen Dump
+ test case 1:
+Please enter a number: 37
+37 is a prime number
+Paste the output of your code here
+ test case 2: 
+Please enter a number: 16
+16 is not a prime number
+ */
