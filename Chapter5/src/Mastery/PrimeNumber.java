@@ -6,7 +6,7 @@ Purpose: Create a PrimeNumber application that prompts the user for a number and
 message indicating whether the number is prime or not.
 Author: Youdis Acharya, 
 School: CHHS
-Course: Computer Science 20 ??
+Course: Computer Science 20 
  
 
 */
