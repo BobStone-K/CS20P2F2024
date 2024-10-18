@@ -16,7 +16,7 @@ package Mastery;
 
 import java.util.Scanner;
 
-public class GuessingGame {
+public class GuessingGame2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
