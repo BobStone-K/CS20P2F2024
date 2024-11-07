@@ -97,7 +97,7 @@ public class MetricConversion {
 	        System.out.println(valueToConvert + " kilometers equals " + kmToMile(valueToConvert) + " miles");
 	        break;
 	}
-		System.out.print("hi");
+		
 	}
 
 
