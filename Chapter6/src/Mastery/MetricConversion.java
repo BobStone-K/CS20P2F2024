@@ -10,17 +10,17 @@ public class MetricConversion {
 	//Converts feet to Cm by taking parameter of feet and returns centimeters
 	public static double feetToCm(double feet) {
 	
-	return feet * 30.48;
+	return feet * 30;
 	}
 	//Converts yards to meters by taking parameter of yards and returns meters
 	public static double ydsToM(double yards) {
 	
-	return yards * 0.9144;
+	return yards * 0.91;
 	}
 	//Converts miles to kilometers by taking parameter of kilometers and returns kilometers
 	public static double mileToKm(double miles) {
 	
-	return miles * 1.60934;
+	return miles * 1.6;
 	}
 	//Converts Cm to inches by taking parameter of cm and returns inches
 	public static double cmToIn(double cm) {
@@ -50,13 +50,13 @@ public class MetricConversion {
 		int valueToConvert = Input.nextInt();
 		//gives user options on which units to convert and record their answer
 		System.out.print("1.Inches to Centimeters");
-		System.out.println("   2. Feet to Centimeters");
+		System.out.println("   5.Centimeters to Inches");
+		System.out.print("2.Feet to Centimeters");
+		System.out.println("     6.Centimeters to Feet");
 		System.out.print("3.Yards to Meters");
-		System.out.println("         4.Miles to Kilometers");
-		System.out.print("5.Centimeters to Inches");
-		System.out.println("   6. Centimeters to Feet");
-		System.out.print("7.Meters to Yards");
-		System.out.println("         8.Kilometers to Miles");
+		System.out.println("         7.Meters to Yards");
+		System.out.print("4.Miles to Kilometers");
+		System.out.println("     8.Kilometers to Miles");
 		
 		System.out.print("Enter your choice: ");
 		int choice = Input.nextInt();
@@ -70,19 +70,23 @@ public class MetricConversion {
 	        break;
 
 	    case 2:
-	        System.out.println(valueToConvert + " centimeters equals " + cmToIn(valueToConvert) + " inches");
+	    	System.out.println(valueToConvert + " feet equals " + feetToCm(valueToConvert) + " centimeters");
+	        
 	        break;
 
 	    case 3:
-	        System.out.println(valueToConvert + " feet equals " + feetToCm(valueToConvert) + " centimeters");
+	    	System.out.println(valueToConvert + " yards equals " + ydsToM(valueToConvert) + " meters");
+	       
 	        break;
 
 	    case 4:
-	        System.out.println(valueToConvert + " centimeters equals " + cmToFt(valueToConvert) + " feet");
+	    	System.out.println(valueToConvert + " miles equals " + mileToKm(valueToConvert) + " kilometers");
+	  
 	        break;
 
 	    case 5:
-	        System.out.println(valueToConvert + " yards equals " + ydsToM(valueToConvert) + " meters");
+	    	System.out.println(valueToConvert + " centimeters equals " + cmToIn(valueToConvert) + " inches");
+	      
 	        break;
 
 	    case 6:
@@ -90,7 +94,8 @@ public class MetricConversion {
 	        break;
 
 	    case 7:
-	        System.out.println(valueToConvert + " miles equals " + mileToKm(valueToConvert) + " kilometers");
+	    	System.out.println(valueToConvert + " meters equals " + mToYds(valueToConvert) + " yards");
+	        
 	        break;
 
 	    case 8:
