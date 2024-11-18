@@ -30,17 +30,17 @@ public class MetricConversion {
 	//Converts Cm to feet by taking parameter of cm and returns feet
 	public static double cmToFt(double cm) {
 		
-	return cm / 30.48;
+	return cm / 30;
 	}
 	//Converts meters to yards by taking parameter of meters and returns yards
 	public static double mToYds(double meters) {
 		
-	return meters / 0.9144;
+	return meters / 0.91;
 	}
 	//converts kilometers to miles by taking parameter of kilometers and returns miles
 	public static double kmToMile(double km) {
 	
-	return km / 1.60934;
+	return km / 1.6;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

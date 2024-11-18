@@ -17,6 +17,7 @@ public class SpanishNumbers {
 			//prints out every number from one to ten as it is inserted into the method
 			System.out.println((i + 1) + ": " + spanishConvert(i));
 		}
+
 	}
 
 }
