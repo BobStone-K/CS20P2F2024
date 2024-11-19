@@ -1,3 +1,16 @@
+/*
+
+Program: AddCoins.java          Last Date of this Revision: November 19, 2024
+
+Purpose: Create an AddCoins application that prompts the user for the number of pennies, nickels, dimes,
+and quarters, and then displays their total dollar amount.
+
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
 package Mastery;
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -34,3 +47,23 @@ public class AddCoins {
 	}
 
 }
+
+/* Screen Dump
+Test case 1:
+Enter your total coins:
+Quarters: 15
+Dimes: 6
+Nickels: 4
+Pennies: 2
+Total: $4.57
+
+Test case 2:
+Enter your total coins:
+Quarters: 0
+Dimes: 9
+Nickels: 7
+Pennies: 4
+Total: $1.29
+
+ 
+ */

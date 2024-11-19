@@ -1,4 +1,18 @@
+/*
+
+Program: MetricConversion.java          Last Date of this Revision: November 19, 2024
+
+Purpose: Create a MetricConversion application that displays a menu of conversion choices and then prompts
+the user to choose a conversion.
+
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
 package Mastery;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class MetricConversion {
 	//Methods
@@ -45,6 +59,7 @@ public class MetricConversion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//ask user to enter number of unit they want to convert and record answer
+		DecimalFormat formatter = new DecimalFormat("#.##");
 		Scanner Input = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		int valueToConvert = Input.nextInt();
@@ -66,40 +81,40 @@ public class MetricConversion {
 		switch (choice) {
 		
 	    case 1:
-	        System.out.println(valueToConvert + " inches equals " + inToCm(valueToConvert) + " centimeters");
+	        System.out.println(valueToConvert + " inches equals " + formatter.format(inToCm(valueToConvert)) + " centimeters");
 	        break;
 
 	    case 2:
-	    	System.out.println(valueToConvert + " feet equals " + feetToCm(valueToConvert) + " centimeters");
+	    	System.out.println(valueToConvert + " feet equals " + formatter.format(feetToCm(valueToConvert)) + " centimeters");
 	        
 	        break;
 
 	    case 3:
-	    	System.out.println(valueToConvert + " yards equals " + ydsToM(valueToConvert) + " meters");
+	    	System.out.println(valueToConvert + " yards equals " + formatter.format(ydsToM(valueToConvert)) + " meters");
 	       
 	        break;
 
 	    case 4:
-	    	System.out.println(valueToConvert + " miles equals " + mileToKm(valueToConvert) + " kilometers");
+	    	System.out.println(valueToConvert + " miles equals " + formatter.format(mileToKm(valueToConvert)) + " kilometers");
 	  
 	        break;
 
 	    case 5:
-	    	System.out.println(valueToConvert + " centimeters equals " + cmToIn(valueToConvert) + " inches");
+	    	System.out.println(valueToConvert + " centimeters equals " + formatter.format(cmToIn(valueToConvert)) + " inches");
 	      
 	        break;
 
 	    case 6:
-	        System.out.println(valueToConvert + " meters equals " + mToYds(valueToConvert) + " yards");
+	        System.out.println(valueToConvert + " centimeters equals " + formatter.format(cmToFt(valueToConvert)) + " feet");
 	        break;
 
 	    case 7:
-	    	System.out.println(valueToConvert + " meters equals " + mToYds(valueToConvert) + " yards");
+	    	System.out.println(valueToConvert + " meters equals " + formatter.format(mToYds(valueToConvert)) + " yards");
 	        
 	        break;
 
 	    case 8:
-	        System.out.println(valueToConvert + " kilometers equals " + kmToMile(valueToConvert) + " miles");
+	        System.out.println(valueToConvert + " kilometers equals " + formatter.format(kmToMile(valueToConvert)) + " miles");
 	        break;
 	}
 		
@@ -112,3 +127,81 @@ public class MetricConversion {
 
 
 }
+
+/* Screen Dump
+Test case 1:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 1
+15 inches equals 38.1 centimeters
+
+Test case 2:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 2
+15 feet equals 450.0 centimeters
+
+Test case 3:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 3
+15 yards equals 13.65 meters
+
+Test case 4:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 4
+15 miles equals 24.0 kilometers
+
+Test case 5:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 5
+15 centimeters equals 5.91 inches
+
+Test case 6:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 6
+15 centimeters equals 0.5 feet
+
+Test case 7:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 7
+15 meters equals 16.48 yards
+
+Test case 8:
+Enter a number: 15
+1.Inches to Centimeters   5.Centimeters to Inches
+2.Feet to Centimeters     6.Centimeters to Feet
+3.Yards to Meters         7.Meters to Yards
+4.Miles to Kilometers     8.Kilometers to Miles
+Enter your choice: 8
+15 kilometers equals 9.38 miles
+
+
+ 
+ */
+

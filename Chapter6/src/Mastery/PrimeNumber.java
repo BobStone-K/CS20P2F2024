@@ -1,3 +1,16 @@
+/*
+
+Program: PrimeNumber.java          Last Date of this Revision: November 19, 2024
+
+Purpose: Modify the PrimeNumber application created in Chapter 6 Exercise 1 to include a method named
+isPrime().
+
+Author: Youdis Acharya, 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
 package Mastery;
 
 import java.util.Scanner;
@@ -41,3 +54,17 @@ public class PrimeNumber {
 	}
 
 }
+/* Screen Dump
+
+Test case 1:
+Please enter a number: 7
+7 is a prime number
+
+Test case 2:
+Please enter a number: 1
+1 is not a prime number
+
+Test case 3:
+ Please enter a number: 10
+10 is not a prime number
+ */
