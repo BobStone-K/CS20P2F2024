@@ -14,23 +14,23 @@ public class PiggyBank {
 			return Double.parseDouble(formatter.format(bank));
 			
 		}
-		//mutator method to add dollar value of a penny to piggy bank
+		// method to add dollar value of a penny to piggy bank
 		public void addPenny() {
 			bank += 0.01;
 		}
-		//mutator method to add dollar value of a nickel to piggy bank
+		// method to add dollar value of a nickel to piggy bank
 		public void addNickel() {
 			bank += 0.05;
 		}
-		//mutator method to add dollar value of a dime to piggy bank
+		// method to add dollar value of a dime to piggy bank
 		public void addDime() {
 			bank += 0.10;
 		}
-		//mutator method to add dollar value of a quarter to piggy bank
+		// method to add dollar value of a quarter to piggy bank
 		public void addQuarter() {
 			bank += 0.25;
 		}
-		//mutator method to take out money from bank with a parameter of how much to take out
+		// method to take out money from bank with a parameter of how much to take out
 		public String takeMoney(double money) {
 			//checking if balance of piggy bank has enough to take out how much money the user wants to
 			if (bank >= money) {

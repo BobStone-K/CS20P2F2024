@@ -7,19 +7,19 @@ public class Num {
 	public Num (int integer) {
 		number = integer;
 	}
-	//accessor method returns the number variable 
+	//method returns the number variable 
 	public int wholeNum() {
 		return number;
 	}
-	//accessor method returns ones place of number
+	// method returns ones place of number
 	public int onesPlace() {
 		return number%10;
 	}
-	//accessor method returns tens place of number
+	//method returns tens place of number
 	public int tensPlace() {
 		return (number/10)%10;
 	}
-	//accessor method returns hundreds place of number
+	// method returns hundreds place of number
 	public int hundredsPlace() {
 		return (number/100)%10;
 	}

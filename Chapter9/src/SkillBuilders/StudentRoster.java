@@ -8,12 +8,13 @@ public class StudentRoster {
 		int numStudents;
 		System.out.print("Please enter how many students are in the class: ");
 		numStudents = input.nextInt();
-		String[] students = new String[numStudents];
+		String[] students = new String[numStudents + 1];
 		for(int i = 1; i<= numStudents; i++) {
 			System.out.print("Please enter student " + i + "'s name: ");
 			students[i] = input.next();
 		}
-		System.out.print(students);
+		
+		
 	}
 
 }
