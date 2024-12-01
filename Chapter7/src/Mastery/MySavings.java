@@ -58,7 +58,7 @@ public class MySavings {
 			//takes out how much money user wants out of piggy bank only if it is less than or equal to how much is in piggy bank
 			case 6:System.out.print("How many dollars would you like to take out: ");
 					double takenMoney = input.nextDouble();
-					System.out.println(bank.takeMoney(takenMoney) + " new balance is $" + bank.showBalance()); break;
+					System.out.println(bank.takeMoney(takenMoney) + " your balance is $" + bank.showBalance()); break;
 			// if user presses a number that is not within the range 0 to 6 than will be asked to try again, repeating the while loop
 			default:System.out.println("You entered a invalid number please try again");
 			
@@ -175,9 +175,18 @@ test case 6:
 5. Add a quarter
 6. Take money out of bank
 Enter 0 to quit
+Enter your choice: 5
+You added a quarter to your balance, the new balance is $0.25
+1. Show a total in bank.
+2. Add a penny.
+3. Add a nickel
+4. Add a dime
+5. Add a quarter
+6. Take money out of bank
+Enter 0 to quit
 Enter your choice: 6
 How many dollars would you like to take out: 1
-There is not enough money in the bank to take out that much
+There is not enough money in the bank to take out that much your balance is $0.25
 1. Show a total in bank.
 2. Add a penny.
 3. Add a nickel
@@ -204,9 +213,9 @@ You added a quarter to your balance, the new balance is $0.25
 5. Add a quarter
 6. Take money out of bank
 Enter 0 to quit
-Enter you choice: 6
+Enter your choice: 6
 How many dollars would you like to take out: 0.2
-Money has been taken out new balance is $0.05
+Money has been taken out your balance is $0.05
 1. Show a total in bank.
 2. Add a penny.
 3. Add a nickel
