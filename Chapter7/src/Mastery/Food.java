@@ -3,7 +3,7 @@ package Mastery;
 public class Food {
 	//creating price variable to keep track of total price of users order
 	private double price;
-	//constructor method which initializes the total price of the order to zero sinc nothign has been ordered yet
+	//constructor method which initializes the total price of the order to zero since nothing has been ordered yet
 	public Food(){
 		price = 0;
 	}

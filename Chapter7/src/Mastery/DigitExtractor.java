@@ -23,7 +23,7 @@ public class DigitExtractor {
 		//created new scanner object and num object by asking user for integer to use as parameter for num object constructor method
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter an integer: ");
-		Num number = new Num(input.nextInt());
+		Num integer = new Num(input.nextInt());
 		// declaring variable for users choice on what to do with integer
 		String choice;
 		//while loop to let the user do multiple things with integer 
@@ -47,13 +47,13 @@ public class DigitExtractor {
 			// if they picked choice W,O,T, or H then the corresponding action will run
 			switch (choice) {
 			// choice W will output the whole integer
-			case "w":System.out.println("your integer is " + number.wholeNum()); break;
+			case "w":System.out.println("your integer is " + integer.wholeNum()); break;
 			//choice O accesses method which outputs ones places of number
-			case "o": System.out.println("The ones place digit is: " + number.onesPlace());  break;
+			case "o": System.out.println("The ones place digit is: " + integer.onesPlace());  break;
 			//choice T accesses method which outputs ten place of number
-			case "t":System.out.println("The tens place digit is: " + number.tensPlace());break;
+			case "t":System.out.println("The tens place digit is: " + integer.tensPlace());break;
 			//choice H accesses method which outputs hundreds place of number
-			case "h":System.out.println("The hundreds place digit is: " + number.hundredsPlace()); break;
+			case "h":System.out.println("The hundreds place digit is: " + integer.hundredsPlace()); break;
 			//if user enters a choice that is not displayed then will tell user to try again
 			default:System.out.println("You entered a invalid choice please try again");
 			
