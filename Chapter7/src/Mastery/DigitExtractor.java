@@ -2,6 +2,7 @@
 
 Program: DigitExtractor.java          Last Date of this Revision: November 24, 2024
 
+
 Purpose: Create a DigitExtractor application that prompts the user for an integer and then displays the ones,
 tens, and hundreds digit of the number.
 
