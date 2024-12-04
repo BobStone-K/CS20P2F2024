@@ -32,18 +32,24 @@ public class LunchOrder {
 		//prompting user for how many hamburger they want, then multiplying that number by price of a hamburger and adding that product to orderTotal
 		System.out.print("Enter number of hamburgers: ");
 		orderTotal += (hamburger.showPrice()*input.nextInt());
+		System.out.println("Each hamburger has " + hamburger.showFat() +"g of fat, "+hamburger.showCarbs() +"g of carbs, and "+ hamburger.showFiber()+"g of of fiber");
 		System.out.println("");
 		//prompting user for how many salads they want, then multiplying that number by price of a salad and adding that product to orderTotal
 		System.out.print("Enter number of salads: ");
 		orderTotal += (salad.showPrice()*input.nextInt());
+		System.out.println("Each salad has " + salad.showFat() +"g of fat, "+salad.showCarbs() +"g of carbs, and "+ salad.showFiber()+"g of of fiber");
 		System.out.println("");
+		//prompting user for how many French fries they want, then multiplying that number by price of French fries and adding that product to orderTotal
 		System.out.print("Enter number of french fries: ");
 		orderTotal += (frenchFries.showPrice()*input.nextInt());
+		System.out.println("French fries have " + frenchFries.showFat() +"g of fat, "+frenchFries.showCarbs() +"g of carbs, and "+ frenchFries.showFiber()+"g of of fiber");
 		System.out.println("");
+		//prompting user for how many sodas they want, then multiplying that number by price of a soda and adding that product to orderTotal
 		System.out.print("Enter number of sodas: ");
 		orderTotal += (soda.showPrice()*input.nextInt());
+		System.out.println("Each soda has " + soda.showFat() +"g of fat, "+soda.showCarbs() +"g of carbs, and "+ soda.showFiber()+"g of of fiber");
 		System.out.println("");
-
+		//outputting total of user's order as the value of orderTotal
 		System.out.println("Your order comes to: $" + formatter.format(orderTotal));
 		
 
