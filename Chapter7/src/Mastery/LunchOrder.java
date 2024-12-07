@@ -2,8 +2,8 @@
 
 Program: LunchOrder.java          Last Date of this Revision: December 5, 2024
 
-Purpose: An application that uses nested for loops to output a table that displays number in 
- multiples of ten.
+Purpose: Create a LunchOrder application that prompts the user for the number of hamburgers, salads, french
+fries, and sodas and then displays the total for the order. 
 
 Author: Youdis Acharya, 
 School: CHHS
