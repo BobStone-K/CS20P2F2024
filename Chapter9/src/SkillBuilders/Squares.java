@@ -13,7 +13,7 @@ public class Squares {
 		
 		//printing out every element's index's value which is the index number squared
 		for(int i = 0; i < 5; i++) {
-			System.out.println("Sqaure of index " + i + ": " + indexSquares[i]);
+			System.out.println("Square of index " + i + ": " + indexSquares[i]);
 		}
 	}
 

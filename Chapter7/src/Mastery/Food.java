@@ -1,4 +1,4 @@
-package Mastery;
+spackage Mastery;
 
 public class Food {
 	//creating variables to record food's price, fat, carbohydrates, fiber.
