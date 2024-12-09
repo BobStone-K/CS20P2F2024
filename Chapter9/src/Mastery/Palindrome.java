@@ -26,7 +26,7 @@ public class Palindrome {
 		System.out.print("Please enter your phrase: ");
 		//turning all the letters in the phrase to lower case so it is easier when we have to check if the reverse of the phrase is the same as the normal version
 		phrase = (input.nextLine()).toLowerCase();
-		//getting rid of all the spaces to make it simpler when checking every character with its counter part when reversed.
+		//getting rid of all the spaces to make it so program doesn't make a mistake when comparing same letter but ones is lower case and the other is upper case when checking every character with its counter part when reversed.
 		phrase = phrase.replaceAll("[^a-z]", "");
 		//puting each character of the phrase into it's own element in an array
 		phraseLetters = phrase.toCharArray();
