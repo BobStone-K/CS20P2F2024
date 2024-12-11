@@ -1,6 +1,6 @@
 /*
-
 Program: Palindrome.java          Last Date of this Revision: December 7, 2024
+
 
 Purpose:Create a Palindrome application that prompts the user for a string and then displays a message
 indicating whether or not the string is a palindrome.

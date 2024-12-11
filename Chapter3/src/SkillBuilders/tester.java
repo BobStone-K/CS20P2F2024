@@ -4,12 +4,8 @@ public class tester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num;
-
-		doSomething();
-
-		num = doSomething();
-
+		String name = "Elaine";
+		System.out.println(name.charAt(3));
 
 
 	}

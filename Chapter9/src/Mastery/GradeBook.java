@@ -43,7 +43,7 @@ public class GradeBook {
 	//Takes parameter of student num to indicate which student it is then adds up all their tests grades and returns that sum divided by 5 which is their average
 	public double studentAvg(int studentNum) {
 		double avg = 0;
-		for (int test = 0; test<grades[studentNum].length; test++) {
+		for (int test = 0; test<grades[studentNum-1].length; test++) {
 			avg += grades[(studentNum-1)][test];
 		}
 		return (avg/5);
@@ -52,11 +52,13 @@ public class GradeBook {
 	}
 	//Takes parameter of which test number then adds all of the students grades on that test and divides by 12 to get the average and returns that quotient 
 	public double testAvg(int testNum) {
-		int Avg = 0;
+		int avg = 0;
 		for(int student = 0; student < grades.length; student++) {
-			Avg =+ grades[student][testNum-1];
+			avg += grades[student][testNum-1];
+			
 		}
-		return (Avg/12);
+		
+		return (avg/12);
 	}
 	
 	

@@ -1,5 +1,4 @@
 /*
-
 Program: EvensAndODDs.java          Last Date of this Revision: December 7, 2024
 
 Purpose: Create an EvensAndOdds application that generates 25 random integers between 0 and 99 and then
