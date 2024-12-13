@@ -6,7 +6,6 @@ public class ReadButton {
         
         //Create 
         DigitalInput greenButton = new DigitalInput();
-
         //Address 
         greenButton.setHubPort(5);
         greenButton.setIsHubPortDevice(true);
@@ -19,7 +18,7 @@ public class ReadButton {
         	if(greenButton.getState()) {
         		 System.out.println("Button State: " + greenButton.getState());
         	}   
-        	Thread.sleep(500);
+        	Thread.sleep(150);
         }
     }
 }

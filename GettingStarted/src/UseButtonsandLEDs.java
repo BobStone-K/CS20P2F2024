@@ -27,22 +27,22 @@ public static void main(String[] args) throws Exception{
     greenLED.open(1000);
 
     //Use your Phidgets 
-        while(true){
+    while(true){
 
-            if( redButton.getState()){
-                redLED.setState(true);
-            } else {
-                redLED.setState(false);
-            }
-
-            if(greenButton.getState()){
-                greenLED.setState(true);
-            } else {
-                greenLED.setState(false);
-            }
-
-            Thread.sleep(150);
+        if( redButton.getState()){
+            greenLED.setState(true);
+        } else {
+            greenLED.setState(false);
         }
+
+        if(greenButton.getState()){
+            redLED.setState(true);
+        } else {
+            redLED.setState(false);
+        }
+
+        Thread.sleep(150);
     }
+}
 }
 
