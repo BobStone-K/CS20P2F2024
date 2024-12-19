@@ -10,6 +10,7 @@ public static void main(String[] args) throws Exception{
     DigitalInput greenButton = new DigitalInput();
     DigitalOutput greenLED = new DigitalOutput();
     int buttonCount = 0;
+    Boolean buttonPressed = true;
     //Address 
     redButton.setHubPort(0);
     redButton.setIsHubPortDevice(true);
@@ -42,13 +43,17 @@ public static void main(String[] args) throws Exception{
         }
 
         
-        if(greenButton.getState() || redButton.getState()) {
-        	buttonCount++;
-        	System.out.println("Button has been pressed " + buttonCount + " this many times");
-        }
+       	if((greenButton.getState() || redButton.getState()) && !buttonPressed) {
+   		 buttonCount++;
+   		 System.out.println("Button has been pressed " + buttonCount + " times");
+   		 buttonPressed = true;
+       	}  
+		else if((!greenButton.getState() || !redButton.getState()) && buttonPressed) {
+			buttonPressed = false;
+		}
         
         
-        Thread.sleep(150);
+        Thread.sleep(100);
     }
 }
 }
