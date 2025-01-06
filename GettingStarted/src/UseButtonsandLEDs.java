@@ -31,15 +31,15 @@ public static void main(String[] args) throws Exception{
     while(true){
 
         if( redButton.getState()){
-            greenLED.setState(true);
-        } else {
             greenLED.setState(false);
+        } else {
+            greenLED.setState(true);
         }
 
         if(greenButton.getState()){
-            redLED.setState(true);
-        } else {
             redLED.setState(false);
+        } else {
+            redLED.setState(true);
         }
 
         
@@ -48,7 +48,7 @@ public static void main(String[] args) throws Exception{
    		 System.out.println("Button has been pressed " + buttonCount + " times");
    		 buttonPressed = true;
        	}  
-		else if((!greenButton.getState() || !redButton.getState()) && buttonPressed) {
+		else if((!greenButton.getState() && !redButton.getState()) && buttonPressed) {
 			buttonPressed = false;
 		}
         
