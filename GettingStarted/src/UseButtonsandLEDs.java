@@ -5,10 +5,10 @@ public class UseButtonsandLEDs {
 public static void main(String[] args) throws Exception{
 
     //Create 
-    DigitalInput redButton = new DigitalInput();
-    DigitalOutput redLED = new DigitalOutput();
     DigitalInput greenButton = new DigitalInput();
     DigitalOutput greenLED = new DigitalOutput();
+    DigitalInput redButton = new DigitalInput();
+    DigitalOutput redLED = new DigitalOutput();
     int buttonCount = 0;
     Boolean buttonPressed = true;
     //Address 
