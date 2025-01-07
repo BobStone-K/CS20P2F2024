@@ -23,7 +23,7 @@ public class ReadButton {
         		System.out.println("Button State: " + greenButton.getState());
         		buttonPressed = false;
         	}
-        	Thread.sleep(150);
+        	Thread.sleep(100);
         }
     }
 }
