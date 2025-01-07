@@ -12,8 +12,8 @@ public class ReadTemperature {
         //Use your Phidgets 
         while (true) {
             System.out.println("Temperature in Farenheit: " + (1.8*temperatureSensor.getTemperature() + 32) + "°F" );
-            System.out.println("Temperature in Celsius: " + (1.8*temperatureSensor.getTemperature()) + "°C" );
-            Thread.sleep(150);
+            System.out.println("Temperature in Celsius: " + (temperatureSensor.getTemperature()) + "°C" );
+            Thread.sleep(500);
 	        }
 	    }
 
